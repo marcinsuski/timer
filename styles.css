@@ -35,10 +35,12 @@ body::before {
 .container {
     width: clamp(350px, 350px + 10vw, 600px);
     height: 250px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: hsla(0, 0%, 0%, 0.675);
     border-radius: 30px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px hsl(0, 0%, 0%);
     color: white;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 }
 
 #timer {
